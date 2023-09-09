@@ -4,9 +4,9 @@
 int main() {
 
     // create animels
-    ANIMEL_TYPE cat;
-    ANIMEL_TYPE dog;
-    ANIMEL_TYPE duck;
+    ANIMAL_TYPE cat;
+    ANIMAL_TYPE dog;
+    ANIMAL_TYPE duck;
 
     // init animel attributes
     strcpy(cat.name, "cat");
