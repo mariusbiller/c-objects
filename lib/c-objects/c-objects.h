@@ -1,19 +1,20 @@
-#include <stdio.h>
+#ifndef LIB_H
+#define LIB_H
 
-// prototype declaration of main structure
-typedef struct ANIMEL_TYPE ANIMEL_TYPE;
+// Prototype declaration of main structure
+typedef struct ANIMAL_TYPE ANIMAL_TYPE;
 
-// function pointer type for animel sound
-typedef void (*SoundFunction)( ANIMEL_TYPE*);
+// Function pointer type for animal sound
+typedef void (*SoundFunction)(ANIMAL_TYPE*);
 
-// the animel structure
-typedef struct ANIMEL_TYPE {
+// The animal structure
+typedef struct ANIMAL_TYPE {
     char name[20];
     char sound[20];
     SoundFunction makeSound; // Function pointer for making a sound
-} ANIMEL_TYPE;
+} ANIMAL_TYPE;
 
-// function to make an animel sound
-void make_sound(ANIMEL_TYPE* animel) {
-    printf("the '%s' says '%s'\n", animel->name, animel->sound);
-}
+// Function to make an animal sound
+void make_sound(ANIMAL_TYPE* animal);
+
+#endif // LIB_H
