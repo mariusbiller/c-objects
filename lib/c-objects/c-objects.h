@@ -5,7 +5,7 @@
 typedef struct ANIMAL_TYPE ANIMAL_TYPE;
 
 // Function pointer type for animal sound
-typedef void (*SoundFunction)(ANIMAL_TYPE*);
+typedef void (*SoundFunction)(void);
 
 // The animal structure
 typedef struct ANIMAL_TYPE {
@@ -14,7 +14,10 @@ typedef struct ANIMAL_TYPE {
     SoundFunction makeSound; // Function pointer for making a sound
 } ANIMAL_TYPE;
 
+// function to inherit sturcture members by using global keyword "this"
+void select_instance(ANIMAL_TYPE* animel);
+
 // Function to make an animal sound
-void make_sound(ANIMAL_TYPE* animal);
+void make_sound();
 
 #endif // LIB_H
