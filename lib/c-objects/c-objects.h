@@ -14,6 +14,9 @@ typedef struct ANIMAL_TYPE {
     SoundFunction makeSound; // Function pointer for making a sound
 } ANIMAL_TYPE;
 
+// function to constuct and enable inherence in member functions 
+ANIMAL_TYPE* Animal(ANIMAL_TYPE* animel);
+
 // function to inherit sturcture members by using global keyword "this"
 void select_instance(ANIMAL_TYPE* animel);
 

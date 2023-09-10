@@ -22,14 +22,9 @@ int main() {
     duck.makeSound = make_sound;
 
     // make the sounds of the corresponding animals
-    select_instance(&cat);
-    cat.makeSound();
-
-    select_instance(&dog);
-    dog.makeSound();
-
-    select_instance(&duck);
-    duck.makeSound();
+    Animal(&cat)->makeSound();
+    Animal(&dog)->makeSound();
+    Animal(&duck)->makeSound();
 
     return 0;
 }
