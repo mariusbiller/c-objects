@@ -8,6 +8,8 @@ typedef struct ANIMAL_TYPE {
     void (*make_sound)(void);
 } ANIMAL;
 
+ANIMAL new_Animel(char* name, char* sound);
+
 // function to constuct and enable inherence in member functions 
 ANIMAL* Animal(ANIMAL* animel);
 
