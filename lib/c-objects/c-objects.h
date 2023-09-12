@@ -1,9 +1,6 @@
 #ifndef LIB_H
 #define LIB_H
 
-// Prototype declaration of main structure
-typedef struct ANIMAL_TYPE ANIMAL;
-
 // The animal structure
 typedef struct ANIMAL_TYPE {
     char name[20];
