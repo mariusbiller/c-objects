@@ -1,8 +1,5 @@
-# Makefile for compiling main.c with lib/c-objects/c-objects.c and lib/c-objects/c-objects.h
-# Output everything in the bin/ directory
-
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -Wextra -pedantic -std=c99 # strict mode
 INCLUDES = -Ilib/c-objects
 BIN_DIR = bin
 

@@ -2,18 +2,19 @@
 #include <stdio.h>
 
 // global variables
-ANIMAL_TYPE* this;
+ANIMAL* this;
 
 // function to constuct and enable inherence in member functions 
-ANIMAL_TYPE* Animal(ANIMAL_TYPE* animel) {
-    select_instance(animel);
-    return animel;
-}
-
-// function to inherit sturcture members by using global keyword "this"
-void select_instance(ANIMAL_TYPE* animel) {
-    // simulate inheritance
+ANIMAL* Animal(ANIMAL* animel) {
+    
+    // simulate inheritance by selecting struct instance for 'this' operator 
     this = animel; 
+
+    // make sure functions are referenced
+    this->make_sound = make_sound;
+
+    // forward structure to enable function-chainting
+    return animel;
 }
 
 // function to make an animal sound
